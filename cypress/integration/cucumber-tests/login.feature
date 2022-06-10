@@ -1,11 +1,10 @@
 Feature: Login to Application
 
     As a valid user
-    I want to log into Application
+    I want to login into Application
 
     Scenario: Valid Login
         Given I open login page
-        #When I submit login
         When I fill username with "username"
         And  I fill password with "password"
         And I click on submit login
