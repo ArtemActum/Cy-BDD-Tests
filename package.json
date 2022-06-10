@@ -7,15 +7,21 @@
     "cy:open": "cypress open",
     "cy:tests": "cypress run"
   },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^9.7.0",
-    "cypress-cucumber-preprocessor": "^2.5.5",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "prettier": "^1.19.1"
-  },
-  "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
   }
 }

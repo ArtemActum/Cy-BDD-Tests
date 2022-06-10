@@ -15,6 +15,19 @@ When('I submit login', () => {
     // LoginPage.submit()
 })
 
+When('I submit login', () => {
+    cy.get('#user_login').type('username')
+    cy.get('#user_password').type('password')
+    cy.get('input[name="submit"]').click()
+})
+
+Then('I should see homepage', () => {
+    cy.get('#account_summary_tab').should('be.visible')
+})
+
+
+
+
 // When('I fill username with {string}', username => {
 //     LoginPage.fillUsername(username)
 // })
