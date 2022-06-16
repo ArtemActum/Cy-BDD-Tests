@@ -1,6 +1,6 @@
 [
   {
-    "description": "    As a valid user\n    I want to login into Application",
+    "description": "    As a invalid user\n    I cannot log into application\n\n    As a valid user\n    I want to login into Application",
     "keyword": "Feature",
     "name": "Login to Application",
     "line": 1,
@@ -9,9 +9,74 @@
     "uri": "login.feature",
     "elements": [
       {
+        "id": "login-to-application;invalid-login",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Invalid Login",
+        "tags": [
+          {
+            "name": "@focus",
+            "line": 8
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I open login page",
+            "result": {
+              "status": "passed",
+              "duration": 1452000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I fill username with \"invalid username\"",
+            "result": {
+              "status": "passed",
+              "duration": 429000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I fill password with \"invalid password\"",
+            "result": {
+              "status": "passed",
+              "duration": 491000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I click on submit login",
+            "result": {
+              "status": "passed",
+              "duration": 530000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should see errror message",
+            "result": {
+              "status": "passed",
+              "duration": 47000000
+            }
+          }
+        ]
+      },
+      {
         "id": "login-to-application;valid-login",
         "keyword": "Scenario",
-        "line": 6,
+        "line": 19,
         "name": "Valid Login",
         "tags": [],
         "type": "scenario",
@@ -19,51 +84,46 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
+            "line": 20,
             "name": "I open login page",
             "result": {
-              "status": "passed",
-              "duration": 740000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 8,
+            "line": 21,
             "name": "I fill username with \"username\"",
             "result": {
-              "status": "passed",
-              "duration": 225000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 9,
+            "line": 22,
             "name": "I fill password with \"password\"",
             "result": {
-              "status": "passed",
-              "duration": 300000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 10,
+            "line": 23,
             "name": "I click on submit login",
             "result": {
-              "status": "passed",
-              "duration": 1807000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
+            "line": 24,
             "name": "I should see homepage",
             "result": {
-              "status": "passed",
-              "duration": 33000000
+              "status": "skipped"
             }
           }
         ]
